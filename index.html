@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/its-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="" class="logo">
+        <nav>
+            <ul class="list">
+             <li class="list-item">детективы</li>
+             <li class="list-item">драматургия</li>
+             <li class="list-item">приключения</li>
+             <li class="list-item">романы</li>
+             <li class="list-item">поэзия</li>
+             <li class="list-item">комиксы</li>
+            </ul>
+        </nav>
+        <!-- <button class="btn-theme">смена темы</button> -->
+        <div class="switch">
+          <input type="checkbox" id="toggle" class="switch-inp">
+          <label for="toggle" class="switch-label"></label>
+        </div>
+        <button class="burger-btn" id="btn-menu">
+            <img src="img/burgrer-menu.png" alt="" class="burger-img">
+        </button>
+        <div class="burger-menu">
+          <ul class="burger-list">
+            <li class="burgr-item">акции</li>
+            <li class="burgr-item">доставка</li>
+            <li class="burgr-item">бесцеллеры</li>
+            <li class="burgr-item">корзина</li>
+            <li class="burgr-item">вход</li>
+          </ul>
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="first-section-text-block">
+                 <h1 class="first-section-title">Братья Карамазовы</h1>
+                 <h2 class="first-section-name">Достоевский Ф. М.</h2>
+                 <p class="first-section-text">Последний роман Достоевского, вершина его творчества. Загадка, связанная со смертью и кражей, полная накала и страстей любовная история, разворачивающаяся на глазах читателя семейная драма, сложные психологические перипетии, множество вплетенных в основную канву других остросюжетных линий — все это вместилось в роман "Братья Карамазовы", главной проблематикой которого является вопрос о Боге и бессмертии души. А в центре повествования, как всегда у Достоевского, — человек, терзаемый сомнениями, раздираемый страстями, жаждущий любви, власти, денег, мечущийся от добра ко злу и от зла к добру, ищущий свой путь, свою веру, своего Бога.
+                  Роман лег в основу десятков экранизаций — отечественных и зарубежных — и все время становится предметом режиссерских экспериментов.</p>
+                 <p class="first-section-price">Цена: 249₽</p>
+                 <button class="first-section-btn" id="btn" onclick="buy()">В корзину</button>
+            </div>   
+            <img src="img/first-section-img.jpg" alt="" class="first-section-img">
+        </section>
+        <section class="second-section">
+            <h1 class="second-section-title">Другие книги</h1>
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                  <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+                      <div class="card">
+                        <img src="img/book1.jpg" alt="" class="book-img">
+                        <h2 class="book-text">12 стульев</h2>
+                      </div>
+                    </div>
+                    <div class="itc-slider-item">
+                        <div class="card">
+                            <img src="img/book2.jpg" alt="" class="book-img">
+                            <h2 class="book-text">Идиот</h2>
+                          </div>
+                    </div>
+                    <div class="itc-slider-item">
+                        <div class="card">
+                            <img src="img/book3.jpg" alt="" class="book-img">
+                            <h2 class="book-text">Судьба человека</h2>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+              </div>
+        </section>
+        <section class="third-section">
+          <div class="third-section-block">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A391bd60bbe79932e133150730d40e63ba0a334d0bea6d183bff88b5d72937e92&amp;source=constructor" class="map" frameborder="0"></iframe>
+            <div class="third-section-text">
+              <div class="third-section-tittle-block">
+                <h1 class="third-section-tittle">Контакты </h1>
+                <img src="img/Line.svg" alt="">
+              </div>
+              <div class="adress">
+                <img src="img/adress.svg" alt="">
+                <span>Ленинградская ул., с24Г, Химки</span>
+              </div>
+              <div class="time">
+                <img src="img/time.svg" alt="">
+                <span>с 9:00 до 21:00</span>
+              </div><div class="phone">
+                <img src="img/phone.svg" alt="">
+                <span>8 (495) 248-14-80, 8 (800) 444-19-43</span>
+              </div>
+              <div class="question">
+                <h2 class="question-title">Остались вопросы?</h2>
+                <p class="question-text">Оставьте свой номер и мы свяжемся с вами в ближайшее время</p>
+                <span class="name">Имя</span>
+                <span class="number">Телефон</span>
+                <button class="phone-btn">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="fourth-section">
+          <div class="accordion" id="accordion-1">
+            <div class="accordion__item">
+              <div class="accordion__header">
+                 художественная литература 
+              </div>
+              <div class="accordion__body">
+                повести
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                научная литература 
+              </div>
+              <div class="accordion__body">
+              словари
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="scripts/its-slider.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/theme.js"></script>
+</body>
+</html>

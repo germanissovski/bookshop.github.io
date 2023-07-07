@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    font-family: "Comfortaa";
+}
+header{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.list{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 60px;
+}
+.burger-btn{
+    border: 0;
+    background-color: white;
+}
+.logo{
+    width: 8%;
+}
+.second-section-title{
+    text-align: center;
+}
+.card{
+  background-color: #544E38;  
+  width: 797px;
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 40px;
+}
+.book-img{
+ width: 350px;
+ display: block;
+ margin: 0 auto;
+ border-radius: 10px;
+}
+.book-text{
+    text-align: center;
+}
+.first-section{
+    display: flex;
+    justify-content: space-between;
+}
+.first-section-img{
+    width: 30%;
+    height: 30%;
+}
+.first-section-text-block{
+    padding: 100px;
+    color: black;
+}
+.first-section-btn{
+    margin: 20px;
+    border-radius: 50px;
+    width: 260px;
+    height: 60px;
+    background-color: #A99B76;
+    border: 0;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: local("Comfortaa"), url(./Comfortaa/static/Comfortaa-Regular.ttf);
+}
+.list-item{
+    font-size: 25px;
+}
+.first-section-title, .second-section-title{
+    font-size: 50px;
+    font-weight: 700;
+}
+.first-section-name{
+    font-size: 35px;
+    font-weight: 600;
+}
+.first-section-text{
+    font-size: 20px;
+}
+.first-section-price{
+    font-size: 25px;
+    margin: 15px;
+    font-weight: 600;
+}
+.second-section{
+   padding: 100px 0;
+}
+.book-text{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.third-section-tittle-block{
+    display: flex;
+}
+.adress, .time, .phone, .third-section-tittle{
+    margin: 20px;
+}
+.third-section-block{
+    background-color: #A99B76;
+    display: flex;
+}
+.map{
+    width: 887px;
+    height: 691px;
+}
+.question{
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.phone-btn{
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #A99B76;
+    border: 0;
+}
+.burger-menu{
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: #A99B76;
+    width: 80%;
+    height: auto;
+    top: 0;
+}
+.active{
+    display: block;
+}
+.burger-list{
+    list-style: none;
+}
+.burgr-item{
+    margin: 10px;
+    font-size: 30px;
+}
+body.dark-theme{
+    background-color: #544E38;
+}
+.btn-theme{
+    background-color: #A99B76;
+    border-radius: 35px;
+    padding: 15px;
+    font-size: 25px;
+    border: #A99B76;
+}
+body.dark-theme .first-section-text-block{
+    color: #E1D5B3;
+}
+body.dark-theme .card{
+    background-color: #A99B76;
+}
+body.dark-theme .first-section-btn{
+    color: white;
+}
+body.dark-theme .second-section-title{
+    color: #E1D5B3;
+}
+body.dark-theme .question{
+    background-color: #544E38;
+}
+body.dark-theme .question-title{
+    color: #E1D5B3;
+}
+body.dark-theme .question-text{
+    color: #E1D5B3;
+}
+.switch{
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 35px;
+}
+.switch-inp{
+    display: none;
+}
+.switch .switch-label{  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 35px;
+    background: green;
+} 
+.switch .switch-label::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    transition: transform 0.3s ease;
+}
+.switch .switch-inp:checked + .switch-label{
+    background: black;
+}
+
+.switch .switch-inp:checked + .switch-label::after{
+    transform: translateX(25px);
+}
